@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(190, 90%, 25%); /* Задаём цвет фона с использованием HSL */
+    font-family: 'Roboto', sans-serif; /* Устанавливаем шрифт Roboto */
+    font-size: 16px; /* Размер основного текста */
+    font-weight: 400; /* Нормальная толщина шрифта */
+    line-height: 1.5; /* Межстрочный интервал */
+    text-align: justify; /* Выравнивание текста по ширине */
+    color: #333; /* Цвет текста */
+    margin: 20px; /* Отступы вокруг body */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    color: rgb(51, 51, 51); /* Цвет текста заголовков с использованием RGB */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Стили для изображения */
+img {
+    max-width: 50%; /* Максимальная ширина изображения — 50% от родительского элемента */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    border: 2px solid #fff; /* Белая рамка вокруг изображения */
+    border-radius: 8px; /* Скругление углов */
+}
+
+/* Стили для элементов списка */
+ul li {
+    list-style-type: square; /* Маркеры списка в виде квадратов */
+    margin-bottom: 10px; /* Отступ снизу для каждого элемента списка */
+    font-size: 1.2em; /* Размер текста в списке — 1.2em (относительно родительского элемента) */
+}
+
+a {
+    color: #e1ff00; /* Цвет ссылок в HEX */
+    text-decoration: none; 
+}
+
+a:hover {
+    color: rgba(255, 0, 0, 0.8);
+}
+
+/* Контейнер для списка ссылок с использованием Flexbox */
+.links-container {
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Выравниваем элементы по центру по горизонтали */
+    gap: 20px; /* Расстояние между элементами */
+}

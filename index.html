@@ -6,87 +6,18 @@
     <title>BLAMERONE</title>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <style>
-        /* Основной контейнер с flex */
-        .container {
-            display: flex;
-            flex-direction: column; /* Элементы будут располагаться вертикально */
-            gap: 20px; /* Промежуток между элементами */
-            max-width: 800px; /* Максимальная ширина контейнера */
-            margin: 0 auto; /* Центрирование контейнера */
-            padding: 20px;
-            background-color: #f9f9f9; /* Цвет фона контейнера */
-            border-radius: 10px; /* Скругление углов */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
-        }
-
-        /* Заголовки */
-        h1, h2 {
-            text-align: center; /* Выравнивание текста по центру */
-        }
-
-        /* Список */
-        .list-container {
-            display: flex;
-            justify-content: space-around; /* Распределение элементов по горизонтали */
-            gap: 10px; /* Промежуток между элементами */
-        }
-
-        ul {
-            list-style: none; /* Убираем маркеры списка */
-            padding: 0;
-            flex: 1; /* Равномерное распределение пространства */
-        }
-
-        /* Элементы списка */
-        ul li {
-            background-color: #eaeaea; /* Цвет фона элемента */
-            padding: 10px;
-            margin-bottom: 10px; /* Промежуток между элементами */
-            border-radius: 5px; /* Скругление углов */
-            text-align: center; /* Выравнивание текста по центру */
-        }
-
-        /* Изображение */
-        .image-container {
-            display: flex;
-            justify-content: center; /* Выравнивание по центру */
-        }
-
-        img {
-            max-width: 100%; /* Изображение адаптируется под ширину контейнера */
-            height: auto; /* Сохраняет пропорции */
-            border-radius: 10px; /* Скругление углов */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
-        }
-
-        /* Контейнер для ссылок */
-        .links-container {
-            display: flex;
-            justify-content: center; /* Выравнивание по центру */
-            gap: 20px; /* Промежуток между ссылками */
-        }
-
-        /* Ссылки */
-        .links-container a {
-            text-decoration: none; /* Убираем подчеркивание */
-            color: #333; /* Цвет текста */
-            background-color: #f0f0f0; /* Цвет фона */
-            padding: 10px 20px; /* Отступы */
-            border-radius: 5px; /* Скругление углов */
-            transition: background-color 0.3s ease; /* Плавное изменение цвета */
-        }
-
-        /* При наведении на ссылки */
-        .links-container a:hover {
-            background-color: #ddd; /* Изменение цвета фона */
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
+    <header class="header">
         <h1>Лабораторная работа №2</h1>
+        <nav class="nav">
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
 
+    <div class="container">
         <p>В современном мире информация играет ключевую роль в нашей жизни. Мы ежедневно сталкиваемся с огромным количеством данных, которые необходимо обрабатывать и анализировать. Важно уметь фильтровать информацию, выделяя главное и актуальное, чтобы не потеряться в потоке новостей и событий. Это требует не только навыков критического мышления, но и способности к быстрой адаптации к изменениям.</p>
 
         <p>Технологии продолжают развиваться с невероятной скоростью, открывая новые горизонты для бизнеса и образования. Использование интернета, мобильных приложений и облачных технологий значительно упростило доступ к знаниям и ресурсам. Это позволяет людям учиться в любое время и в любом месте, что особенно важно в условиях глобализации и конкурентной среды.</p>
@@ -117,5 +48,9 @@
             <a href="https://github.com/blamerone">GitHub</a>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 BLAMERONE</p>
+    </footer>
 </body>
 </html>

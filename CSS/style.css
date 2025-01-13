@@ -29,6 +29,9 @@ html {
     background-color: rgba(255, 255, 255, 0.9); /* Цвет фона контейнера с использованием RGBA */
     border-radius: 10px; /* Скругление углов */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для контейнера */
+    display: flex; /* Добавляем Flexbox для контейнера */
+    flex-direction: column; /* Элементы внутри контейнера выстраиваются вертикально */
+    gap: 20px; /* Расстояние между элементами */
 }
 
 /* Стили для заголовков */
@@ -74,7 +77,6 @@ a:hover {
     margin-top: 20px; /* Отступ сверху */
 }
 
-/* Стили для элементов списка ссылок */
 .links-container ul {
     display: flex; /* Включаем Flexbox для списка */
     justify-content: space-between; /* Равномерное распределение элементов */
@@ -97,4 +99,65 @@ a:hover {
 
 .links-container ul li a:hover {
     color: #e1ff00; /* Цвет ссылок при наведении */
+}
+
+/* Гибкая сетка для карточек */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 40px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для шапки */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(190, 90%, 20%);
+    color: #fff;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #e1ff00;
+}
+
+/* Стили для подвала */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(190, 90%, 20%);
+    color: #fff;
+    width: 100%;
+    margin-top: auto;
 }
